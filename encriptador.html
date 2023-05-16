@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Encriptador de Texto</title>
+
+      <link rel="stylesheet" href="reset.css">
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+   </head>
+
+   <body>
+
+      <header>
+         <h1>Encriptador de Texto</h1>
+      </header>
+<!--CHECAR SI AGREGO LA TAG <MAIN>-->
+      <div class="contenedor">
+
+         <div class="cajaEncriptador"> <!--Caja de texto izquierda-->
+
+            <textarea cols="30" rows="10" name="texto" class="texto" id="texto" placeholder="Ingrese el texto aquí"></textarea>
+
+         </div>
+
+         <div class="cajaBotones"> <!--Opciones de encriptar o desencriptar-->
+
+            <input class="botonEncriptar" type="button" onclick="encriptar()" value="Encriptar">
+
+            <input class="botondesencriptar" type="button" onclick="desencriptar()" value="Desencriptar">
+
+         </div>
+      </div>
+      
+      <div class="cajaResultado"> <!--AGREGO IMAGEN?--> <!--Caja de texto derecha-->
+         <div class="mensajeEncriptado" id="mensajeEncriptado">
+
+            <h2 id="cajaResultado_Mensaje">No se ha encontrado ningún mensaje (ಥ⌣ಥ)</h2>
+
+            <p>Ingrese el texto que desee encriptar o desencriptar</p>
+
+            <textarea cols="30" rows="10" name="mensaje" class="mensaje" id="mensaje" placeholder="Ingrese el texto aquí"></textarea>
+
+         </div>
+      </div>
+
+   </body>
+
+   <script src="encriptador_js.js"></script>
+</html>
