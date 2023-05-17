@@ -7,20 +7,22 @@
 
       <link rel="stylesheet" href="reset.css">
       <link rel="stylesheet" href="style.css">
+
       <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
    </head>
 
    <body>
 
       <header>
-         <h1>Encriptador de Texto</h1>
+         <h1 class="tituloPrincipal">Encriptador de Texto</h1>
       </header>
 <!--CHECAR SI AGREGO LA TAG <MAIN>-->
       <div class="contenedor">
 
          <div class="cajaEncriptador"> <!--Caja de texto izquierda-->
 
-            <textarea cols="30" rows="10" name="texto" class="texto" id="texto" placeholder="Ingrese el texto aquí"></textarea>
+            <textarea cols="20" rows="10" name="texto" class="texto" id="texto" placeholder="Ingrese el texto aquí"></textarea>
 
          </div>
 
@@ -28,19 +30,20 @@
 
             <input class="botonEncriptar" type="button" onclick="encriptar()" value="Encriptar">
 
-            <input class="botondesencriptar" type="button" onclick="desencriptar()" value="Desencriptar">
+            <input class="botonDesencriptar" type="button" onclick="desencriptar()" value="Desencriptar">
 
          </div>
       </div>
       
-      <div class="cajaResultado"> <!--AGREGO IMAGEN?--> <!--Caja de texto derecha-->
+      <div class="cajaResultado"> <!--Caja de texto derecha-->
+         <img src="Pikachu_Detective.jpg" id="Pikachu">
          <div class="mensajeEncriptado" id="mensajeEncriptado">
 
             <h2 id="cajaResultado_Mensaje">No se ha encontrado ningún mensaje (ಥ⌣ಥ)</h2>
 
             <p>Ingrese el texto que desee encriptar o desencriptar</p>
 
-            <textarea cols="30" rows="10" name="mensaje" class="mensaje" id="mensaje" placeholder="Ingrese el texto aquí"></textarea>
+            <textarea cols="20" rows="10" name="mensaje" class="mensaje" id="mensaje" placeholder="Ingrese el texto aquí"></textarea>
 
          </div>
       </div>
