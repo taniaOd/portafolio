@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="2style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Walter+Turncoat&display=swap" rel="stylesheet">
+    
+  </head>
+
+  <body>
+      <header>Encriptador y Desencriptador de Texto</header>
+      <main>
+         <section class="columna1">
+            <textarea cols="20" rows="10" name="texto" class="texto" id="texto" placeholder="Ingrese el texto aquí" required></textarea>
+            <p class="condiciones">
+               &#9888; Sólo se aceptan minúsculas y sin acentos. &#9888;
+            </p>
+            <div class="buttons">
+               <input type="button" value="Encriptar" id="b_encriptar" class="b_encriptar">
+               <input type="button" value="Desencriptar" id="b_desencriptar" class="b_desencriptar">
+               <input type="button" value="Copiar" id="b_copiar" class="b_copiar">
+            </div>
+         </section>
+
+         <section class="columna2">
+            <div class="caja_imagen">
+               
+            </div>
+            <div class="texto_d">
+               <h1>
+                  No se ha encontrado ningún mensaje
+               </h1>
+               <p>
+                  Ingrese el texto que desee encriptar o desencriptar
+               </p>
+            </div>
+            <div class="mensaje_respuesta">
+               <textarea cols="20" rows="10" name="mensaje_r" class="mensaje_r" id="mensaje_r"></textarea>
+            </div>
+         </section>
+      </main>
+      <script src="encrip.js"></script>
+  </body>
+</html>
+
