@@ -101,7 +101,7 @@
 .columna2__imagen {
   width: 60%;
   height: 200px;
-  background-image: url("https://taniaod.github.io/portafolio/Pikachu_Detective.jpg");
+  background-image: url("./Pikachu_Detective.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 1rem;
