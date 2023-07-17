@@ -1,0 +1,193 @@
+.titulo {
+  font-family: "Walter Turncoat", cursive;
+  color: #8b6e47;
+  font-size: 38px;
+  padding: 0 0.5rem 1.5rem 1rem;
+}
+.columnas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.columna1 {
+  margin: 0 2rem 0 2.5rem;
+}
+.columna1__texto {
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 1rem;
+  letter-spacing: 0.12em;
+  font-size: 20px;
+  line-height: 1.2em;
+  background: var(--background);
+  margin-bottom: 0.5rem;
+}
+.columna1__texto:focus {
+  outline: none;
+  background: var(--background-claro);
+}
+.columna1__condiciones {
+  font-family: "Inconsolata", monospace;
+  font-weight: bolder;
+  font-size: 14px;
+  margin-bottom: 0.85rem;
+}
+.columna1__condiciones::before,
+.columna1__condiciones::after {
+  content: "\26A0";
+  color: red;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+}
+.b_encriptar {
+  font-size: 16px;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  padding: 0.35rem 2.5rem;
+  cursor: pointer;
+  background: var(--background-claro);
+  border-radius: 2rem;
+  border: 2px solid var(--hover-encriptar);
+}
+.b_encriptar:hover {
+  background: var(--hover-encriptar);
+}
+.b_desencriptar {
+  font-weight: bolder;
+  font-size: 16px;
+  padding: 0.35rem 1.5rem;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  background: var(--background-claro);
+  border-radius: 2rem;
+  border: 2px solid var(--hover-desencriptar);
+}
+.b_desencriptar:hover {
+  background: var(--hover-desencriptar);
+}
+.b_copiar {
+  font-weight: bolder;
+  font-size: 16px;
+  padding: 0.35rem 2.5rem;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  background: var(--background-claro);
+  border-radius: 2rem;
+  border: 2px solid var(--hover-copiar);
+}
+.b_copiar:hover {
+  background: var(--hover-copiar);
+}
+.columna2 {
+  width: 30%;
+  height: 100%;
+  border: 2px solid var(--background-claro);
+  border-radius: 1rem;
+  background: var(--background-claro);
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.columna2__imagen {
+  width: 60%;
+  height: 200px;
+  background-image: url(/Pikachu_Detective.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 1rem;
+}
+.columna2__texto {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.columna2__titulo {
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+}
+.columna2__subtitulo::before,
+.columna2__subtitulo::after {
+  content: "\2728";
+  color: var(--hover-copiar);
+}
+.columna2__subtitulo {
+  font-size: 0.85rem;
+}
+.mensaje_r {
+  width: 100%;
+  height: 100%;
+  border: none;
+  letter-spacing: 0.11em;
+  font-size: 18px;
+  line-height: 1.2em;
+  background-color: var(--background-claro);
+  outline: none;
+}
+.ocultar {
+  display: none;
+} /*
+@media screen and (max-width: 414px) {
+  header {
+    font-size: 22px;
+    padding-left: 6px;
+    padding-top: 8px;
+    text-align: center;
+  }
+  .columna1 {
+    width: 92%;
+    height: 30%;
+  }
+  .texto {
+    font-size: 14px;
+  }
+  .condiciones {
+    margin-top: 64%;
+    font-size: 9px;
+  }
+  .buttons {
+    margin-left: 6%;
+  }
+  .b_encriptar,
+  .b_copiar,
+  .b_desencriptar {
+    font-size: 12px;
+    text-align: center;
+    padding: 4px 12px;
+  }
+  .columna2 {
+    position: absolute;
+    margin-top: 64%;
+    height: 30%;
+    margin-left: 3%;
+    width: 92%;
+  }
+  .caja_imagen {
+    margin-left: 0;
+    height: 60%;
+    width: 35%;
+  }
+  .texto_d {
+    width: 58%;
+    position: fixed;
+    margin-top: 2%;
+    margin-left: 34%;
+  }
+  .texto_d h1 {
+    font-size: 11px;
+  }
+  .texto_d p {
+    padding-top: 8%;
+    font-size: 9px;
+  }
+}
+ */

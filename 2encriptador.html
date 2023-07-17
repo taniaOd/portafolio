@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Encriptador de Texto</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="2style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Walter+Turncoat&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="/estilos/reset.css" />
+    <link rel="stylesheet" href="/estilos/normalize.css" />
+    <link rel="stylesheet" href="/estilos/2style.css" />
+    <link rel="stylesheet" href="/estilos/estilos_body.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Walter+Turncoat&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-      <header>Encriptador y Desencriptador de Texto</header>
-      <main>
-         <section class="columna1">
-            <textarea cols="20" rows="10" name="texto" class="texto" id="texto" placeholder="Ingrese el texto aquí" required></textarea>
-            <p class="condiciones">
-               &#9888; Sólo se aceptan minúsculas y sin acentos. &#9888;
-            </p>
-            <div class="buttons">
-               <input type="button" value="Encriptar" id="b_encriptar" class="b_encriptar">
-               <input type="button" value="Desencriptar" id="b_desencriptar" class="b_desencriptar">
-               <input type="button" value="Copiar" id="b_copiar" class="b_copiar">
-            </div>
-         </section>
+    <header class="titulo">Encriptador y Desencriptador de Texto</header>
+    <section class="columnas">
+      <section class="columna1">
+        <textarea
+          cols="50"
+          rows="10"
+          name="texto"
+          class="columna1__texto"
+          id="texto"
+          placeholder="Ingrese el texto aquí"
+          required
+        ></textarea>
+        <p class="columna1__condiciones">Sólo se aceptan minúsculas y sin acentos.</p>
+        <div class="buttons">
+          <input type="button" value="Encriptar" id="b_encriptar" class="b_encriptar" />
+          <input type="button" value="Desencriptar" id="b_desencriptar" class="b_desencriptar" />
+          <input type="button" value="Copiar" id="b_copiar" class="b_copiar" />
+        </div>
+      </section>
 
-         <section class="columna2">
-            <div class="caja_imagen">
-               
-            </div>
-            <div class="texto_d">
-               <h1>
-                  No se ha encontrado ningún mensaje
-               </h1>
-               <p>
-                  Ingrese el texto que desee encriptar o desencriptar
-               </p>
-            </div>
-            <div class="mensaje_respuesta">
-               <textarea cols="20" rows="10" name="mensaje_r" class="mensaje_r" id="mensaje_r"></textarea>
-            </div>
-         </section>
-      </main>
-      <script src="encrip.js"></script>
+      <section class="columna2">
+        <span class="columna2__imagen"></span>
+        <div class="columna2__texto">
+          <h2 class="columna2__titulo">No se ha encontrado ningún mensaje</h2>
+          <p class="columna2__subtitulo">Ingrese el texto que desee encriptar o desencriptar</p>
+        </div>
+        <div class="columna2__mensaje">
+          <textarea cols="30" rows="10" name="mensaje_r" class="mensaje_r" id="mensaje_r"></textarea>
+        </div>
+      </section>
+    </section>
+    <script src="encrip.js"></script>
   </body>
 </html>
-

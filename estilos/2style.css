@@ -1,0 +1,11 @@
+:root {
+  --background: #f5dabd;
+  --background-claro: #f7f2e4;
+  --hover-encriptar: #a6792a;
+  --hover-desencriptar: #8e7356;
+  --hover-copiar: #e2bd60;
+}
+body {
+  background-color: var(--background);
+  padding: 0.5rem 3.5rem 2rem 1.5rem;
+}
